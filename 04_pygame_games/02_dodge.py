@@ -15,11 +15,11 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 48)
 
 # Colors
-BG      = (15, 15, 35)
-PLAYER_C= (100, 220, 255)
-ENEMY_C = (255, 80,  80)
-WHITE   = (255, 255, 255)
-RED     = (255,  60,  60)
+BG      = pygame.Color("midnightblue")
+PLAYER_C= pygame.Color("deepskyblue")
+ENEMY_C = pygame.Color("tomato")
+WHITE   = pygame.Color("white")
+RED     = pygame.Color("red")
 
 # Player
 pl_w, pl_h = 50, 50

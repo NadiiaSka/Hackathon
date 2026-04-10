@@ -10,8 +10,8 @@ WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("My First Pygame Window")
 
-# Change this color! (R, G, B) — values from 0 to 255
-BACKGROUND = (30, 30, 60)   # dark blue
+# Change this color! Use a readable name like "skyblue" or "black"
+BACKGROUND = pygame.Color("midnightblue")
 
 running = True
 while running:

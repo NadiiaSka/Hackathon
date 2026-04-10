@@ -9,15 +9,15 @@ WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Night Scene")
 
-# Colors
-SKY    = ( 10,  10,  40)
-GROUND = ( 30,  80,  30)
-HILL   = ( 20,  60,  20)
-WHITE  = (255, 255, 255)
-YELLOW = (255, 240, 100)
-BROWN  = (100,  60,  20)
-ORANGE = (220, 120,  40)
-GRAY   = (150, 150, 160)
+# Colors (human-readable names)
+SKY    = pygame.Color("midnightblue")
+GROUND = pygame.Color("forestgreen")
+HILL   = pygame.Color("darkgreen")
+WHITE  = pygame.Color("white")
+YELLOW = pygame.Color("khaki")
+BROWN  = pygame.Color("saddlebrown")
+ORANGE = pygame.Color("darkorange")
+GRAY   = pygame.Color("lightslategray")
 
 running = True
 while running:

@@ -15,11 +15,11 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 48)
 
 # Colors
-BG      = (20, 20, 40)
-BALL_C  = (255, 100, 100)
-PAD_C   = (100, 220, 255)
-WHITE   = (255, 255, 255)
-RED     = (255, 60, 60)
+BG      = pygame.Color("midnightblue")
+BALL_C  = pygame.Color("tomato")
+PAD_C   = pygame.Color("deepskyblue")
+WHITE   = pygame.Color("white")
+RED     = pygame.Color("red")
 
 # Paddle
 pad_w, pad_h = 120, 18

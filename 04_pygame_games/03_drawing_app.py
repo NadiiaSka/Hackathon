@@ -17,16 +17,16 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 30)
 
 PALETTE = [
-    (255, 255, 255),   # 1 white
-    (255,  80,  80),   # 2 red
-    (255, 180,  50),   # 3 orange
-    (255, 240,  50),   # 4 yellow
-    ( 80, 220,  80),   # 5 green
-    ( 80, 150, 255),   # 6 blue
-    (200,  80, 255),   # 7 purple
+    pygame.Color("white"),      # 1 white
+    pygame.Color("tomato"),     # 2 red
+    pygame.Color("orange"),     # 3 orange
+    pygame.Color("gold"),       # 4 yellow
+    pygame.Color("limegreen"),  # 5 green
+    pygame.Color("dodgerblue"), # 6 blue
+    pygame.Color("mediumorchid"), # 7 purple
 ]
 
-BG = (30, 30, 30)
+BG = pygame.Color("dimgray")
 canvas = pygame.Surface((WIDTH, HEIGHT))
 canvas.fill(BG)
 
@@ -65,7 +65,7 @@ while running:
     # HUD
     tip = font.render(
         f"Color: 1-7 | Size: {brush_size} (+/-) | Clear: C",
-        True, (180, 180, 180)
+        True, pygame.Color("gainsboro")
     )
     screen.blit(tip, (10, 10))
 
@@ -74,7 +74,7 @@ while running:
         rect = pygame.Rect(10 + i * 36, HEIGHT - 44, 30, 30)
         pygame.draw.rect(screen, col, rect, border_radius=5)
         if col == current_color:
-            pygame.draw.rect(screen, (255, 255, 255), rect, 3, border_radius=5)
+            pygame.draw.rect(screen, pygame.Color("white"), rect, 3, border_radius=5)
 
     pygame.display.flip()
 

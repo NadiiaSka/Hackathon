@@ -17,9 +17,9 @@ ball_y = HEIGHT // 2
 ball_radius = 25
 speed_x = 5   # Try changing the speed!
 speed_y = 4
-color = (255, 80, 80)
+color = pygame.Color("tomato")
 
-BG = (20, 20, 40)
+BG = pygame.Color("midnightblue")
 
 running = True
 while running:

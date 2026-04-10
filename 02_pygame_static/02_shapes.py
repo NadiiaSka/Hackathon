@@ -9,13 +9,13 @@ WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Shapes!")
 
-# Colors (R, G, B)
-WHITE  = (255, 255, 255)
-RED    = (220,  50,  50)
-GREEN  = ( 50, 200,  50)
-BLUE   = ( 50, 100, 220)
-YELLOW = (255, 220,   0)
-BG     = ( 20,  20,  40)
+# Colors (human-readable names)
+WHITE  = pygame.Color("white")
+RED    = pygame.Color("crimson")
+GREEN  = pygame.Color("limegreen")
+BLUE   = pygame.Color("royalblue")
+YELLOW = pygame.Color("gold")
+BG     = pygame.Color("midnightblue")
 
 running = True
 while running:

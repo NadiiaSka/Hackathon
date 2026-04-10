@@ -15,10 +15,10 @@ clock = pygame.time.Clock()
 player_x = WIDTH // 2
 player_y = HEIGHT // 2
 player_size = 50
-player_color = (100, 200, 255)
+player_color = pygame.Color("deepskyblue")
 SPEED = 5
 
-BG = (20, 20, 40)
+BG = pygame.Color("midnightblue")
 
 running = True
 while running:

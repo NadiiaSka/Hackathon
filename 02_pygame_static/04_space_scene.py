@@ -9,13 +9,13 @@ pygame.init()
 # ---- PARAMETERS — change these! ----
 WIDTH, HEIGHT   = 800, 600
 NUM_STARS       = 200
-PLANET_COLOR    = ( 80, 140, 220)   # blue-ish planet
+PLANET_COLOR    = pygame.Color("cornflowerblue")
 PLANET_RADIUS   = 90
 PLANET_X        = 220
 PLANET_Y        = 300
-MOON_COLOR      = (200, 200, 180)
+MOON_COLOR      = pygame.Color("lightgray")
 MOON_RADIUS     = 30
-RING_COLOR      = (180, 160, 100)
+RING_COLOR      = pygame.Color("tan")
 # ------------------------------------
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -32,11 +32,11 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    screen.fill((0, 0, 10))  # Deep space black
+    screen.fill(pygame.Color("midnightblue"))
 
     # Stars
     for sx, sy, sr in stars:
-        pygame.draw.circle(screen, (255, 255, 255), (sx, sy), sr)
+        pygame.draw.circle(screen, pygame.Color("white"), (sx, sy), sr)
 
     # Planet ring (drawn behind planet)
     pygame.draw.ellipse(screen, RING_COLOR,
@@ -46,7 +46,7 @@ while running:
     pygame.draw.circle(screen, PLANET_COLOR, (PLANET_X, PLANET_Y), PLANET_RADIUS)
 
     # Planet shading (slightly darker circle offset)
-    pygame.draw.circle(screen, (40, 80, 160),
+    pygame.draw.circle(screen, pygame.Color("steelblue"),
                        (PLANET_X + 20, PLANET_Y - 20), PLANET_RADIUS - 20)
 
     # Moon
@@ -54,7 +54,7 @@ while running:
                        (PLANET_X + PLANET_RADIUS + 60, PLANET_Y - 50), MOON_RADIUS)
 
     # Distant small planet
-    pygame.draw.circle(screen, (220, 100, 80), (620, 120), 45)
+    pygame.draw.circle(screen, pygame.Color("coral"), (620, 120), 45)
 
     pygame.display.flip()
 

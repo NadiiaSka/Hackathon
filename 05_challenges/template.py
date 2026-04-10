@@ -14,12 +14,12 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont(None, 48)
 
 # ---- COLORS ----
-BG     = (20, 20, 40)
-WHITE  = (255, 255, 255)
-RED    = (220,  50,  50)
-GREEN  = ( 50, 200,  50)
-BLUE   = ( 50, 100, 220)
-YELLOW = (255, 220,   0)
+BG     = pygame.Color("midnightblue")
+WHITE  = pygame.Color("white")
+RED    = pygame.Color("crimson")
+GREEN  = pygame.Color("limegreen")
+BLUE   = pygame.Color("royalblue")
+YELLOW = pygame.Color("gold")
 
 # ---- YOUR VARIABLES ----
 # Add your game variables here, for example:
